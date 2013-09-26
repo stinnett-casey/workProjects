@@ -1,0 +1,49 @@
+#login_form{
+	display: block;
+	margin: 25% auto;
+	width: 350px;
+	height: 275px;
+	background-color: #736256;
+	border-radius: 8px;
+}
+
+#login_form h1{
+	text-align: center;
+}
+
+#login_form input:not([name='submit']){
+	width: 90%;
+	display: block;
+	margin: 25px auto;
+	line-height: 48px;
+	font-size: 30px;
+	border-radius: 8px;
+	border: 1px solid #D1DA9F;
+}
+
+[name=username]{
+	display: inline-block;
+	margin-top: 25px;
+}
+
+[name=password]{
+	display: inline-block;
+	top: 50px;
+}
+input[type="submit"]{
+	border-color: #96AE22;
+	background-color: #B6C569;
+	border-width: 1px;
+	text-shadow: 0 1px 0 #3d3d3d;
+	color: #F4F4E6;
+	background-image: none;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 5px 25px;
+	font-weight: bold;
+	margin-left: 35px;
+	border-radius: 5px;
+}
