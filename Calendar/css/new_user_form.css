@@ -1,0 +1,22 @@
+h1{
+	text-align: center;
+}
+
+#new_user_form{
+	display: block;
+	margin: 0 auto;
+	width: 140px;
+}
+
+#new_user_form input{
+	display: inline-block;
+	margin: 8px auto;
+}
+
+#new_user_form label{
+	text-align: center;
+}
+
+#smaller_button{
+	padding: 5px 2px;
+}
