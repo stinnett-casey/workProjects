@@ -218,7 +218,23 @@ class CI_Calendar {
 					{
 						// Cells with content
 						$temp = ($is_current_month == TRUE AND $day == $cur_day) ? $this->temp['cal_cell_content_today'] : $this->temp['cal_cell_content'];
-						$out .= str_replace('{day}', $day, str_replace('{content}', $data[$day], $temp));
+						/*Custom code*/
+						//Multiple events in a day
+						if (is_array($data[$day]))
+						{
+							$several_events = '';
+							foreach ($data[$day] as $key)
+							{
+								$several_events .= '<div class="memo">' . $key .'</div>';
+							}
+							$out .= str_replace('{day}', $day, str_replace('{content}', $several_events, $temp));
+						}
+						// One event per day
+						else
+						{
+							$out .= str_replace('{day}', $day, str_replace('{content}', $data[$day], $temp));
+						}
+						/*End Custom code*/
 					}
 					else
 					{
